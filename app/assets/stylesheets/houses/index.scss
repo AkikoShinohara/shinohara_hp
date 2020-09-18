@@ -1,0 +1,26 @@
+#header {
+  height: 1000vh;/* ← 背景（動画）の高さを設定しています */
+  overflow: hidden;
+}
+.header_area{
+  position: relative;
+  margin: 0 auto;
+  width: 1280px;
+  z-index: 1000;/* ← 動画の上のコンテンツ表示には必要です */
+}
+
+
+/* スマートフォンの設定 */
+@media screen and (max-width: 768px){
+
+  #tubular-container iframe {/* ←スマートフォンの際には、tubular は非表示化します */
+      display: none;
+  }
+
+  #header{
+      background-image: url(https://source.unsplash.com/random);      /* ←代替えの静止画を設定します */
+      background-size: cover;
+      background-position: center;
+      background-repeat: no-repeat;
+  }
+}
