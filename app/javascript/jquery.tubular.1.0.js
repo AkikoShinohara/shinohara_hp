@@ -28,21 +28,21 @@
         volumeUpClass: 'tubular-volume-up',
         volumeDownClass: 'tubular-volume-down',
         increaseVolumeBy: 10,
-        start: 0
+        start: 5,
     };
 
     // methods
 
     var tubular = function(node, options) { // should be called on the wrapper div
         var options = $.extend({}, defaults, options),
-            $body = $('#header') // cache body node
+            $body = $('#top-wrapper') // cache body node
             $node = $(node); // cache wrapper node
 
         // build container
-        var tubularContainer = '<div id="tubular-container" style="overflow: hidden; position: fixed; z-index: 1; width: 100%; height: 500px"><div id="tubular-player" style="position: absolute"></div></div><div id="tubular-shield" style="width: 100%; height: 500%; z-index: 2; position: absolute; left: 0; top: 0;"></div>';
+        var tubularContainer = '<div id="tubular-container" style="overflow: hidden; position: fixed; z-index: 1; width: 100%; height: 800px"><div id="tubular-player" style="position: absolute"></div></div><div id="tubular-shield" style="width: 100%; height: 500%; z-index: 2; position: absolute; left: 0; top: 0;"></div>';
 
         // set up css prereq's, inject tubular container and set up wrapper defaults
-        $('#header').css({'width': '100%', 'height': '500%'});
+        $('#top-wrapper').css({'width': '100%', 'height': '800px'});  //45行目【要素と高さの数値を修正】
         $body.prepend(tubularContainer);
         $node.css({position: 'relative', 'z-index': options.wrapperZIndex});
 
