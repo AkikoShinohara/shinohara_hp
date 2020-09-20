@@ -1,12 +1,123 @@
-#header {
-  height: 1000vh;/* ← 背景（動画）の高さを設定しています */
-  overflow: hidden;
+*{
+  font-family: serif;
 }
-.header_area{
+#top-wrapper {
+  height: 800px;/* ← 背景（動画）の高さを設定しています */
+  width: 100%;
+  overflow: hidden;
+  background-size: cover;
+}
+
+.left-container {
+  position: absolute;
+  top: 300px;
+  z-index: 3;
+}
+.left-container h1 {
+  font-size: 45px;
+  text-align: center;
+  color: black;
+  background-color: rgba(255, 255, 255, 0.541);
+}
+.left-container h2 {
+  font-size: 30px;
+  color: black;
+  background-color: rgba(255, 255, 255, 0.541);
+}
+
+.main-wrapper {
   position: relative;
-  margin: 0 auto;
-  width: 1280px;
-  z-index: 1000;/* ← 動画の上のコンテンツ表示には必要です */
+}
+
+.pict1 {
+  z-index: 100;
+  width: 1450px;
+  position: absolute;
+}
+
+.pict2 {
+  z-index: 400;
+  width: 45vh;
+  height: 60vh;
+  opacity: 0.9;
+
+  position: absolute;
+  top: 150px;
+  left: 550px;
+}
+
+.pict3 {
+  z-index: 300;
+  width: 60vh;
+  height: 30vh;
+  opacity: 0.6;
+
+  position: absolute;
+  top: 350px;
+  left: 90px;
+}
+
+
+.first-container h4 {
+  font-size: 20px;
+  z-index: 150;
+
+  position: absolute;
+  top: 230px;
+  left: 970px;
+}
+
+
+.second-container h5 {
+  font-size: 19px;
+  margin-left: 0 0 0 90px;
+  z-index: 150;
+
+  position: absolute;
+  top: 760px;
+  left: 90px;
+}
+
+.pict4 {
+  z-index: 400;
+  width: 60vh;
+  height: 30vh;
+  opacity: 0.9;
+
+  position: absolute;
+  top: 990px;
+  left: 540px;
+}
+
+.pict5 {
+  z-index: 400;
+  width: 45vh;
+  height: 60vh;
+  opacity: 0.9;
+  
+  position: absolute;
+  top: 920px;
+  left: 990px;
+}
+
+.pict6 {
+  z-index: 400;
+  width: 60vh;
+  height: 40vh;
+  opacity: 0.7;
+
+  position: absolute;
+  top: 1200px;
+  left: 100px;
+}
+
+.contact {
+  width: 100%;
+  height: 50px;
+  z-index: 400;
+  position: absolute;
+  top: 2800px;
+  background-color: rgba(185, 166, 136, 0.562);
 }
 
 
@@ -17,10 +128,10 @@
       display: none;
   }
 
-  #header{
-      background-image: url(https://source.unsplash.com/random);      /* ←代替えの静止画を設定します */
-      background-size: cover;
-      background-position: center;
-      background-repeat: no-repeat;
+  #top-wrapper{
+    background-image: url(https://source.unsplash.com/random);      /* ←代替えの静止画を設定します */
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
   }
 }
