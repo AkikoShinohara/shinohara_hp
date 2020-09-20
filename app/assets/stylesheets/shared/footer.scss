@@ -1,0 +1,43 @@
+footer{
+  height: 150px;
+  width: 100%;
+  background-color: rgba(2, 2, 68, 0.774);
+  z-index: 1000;
+  display: flex;
+
+  position: absolute;
+  top: 2825px;
+}
+.footer-logo {
+  width: 20%;
+  color: white;
+  padding: 60px 0 50px 50px;
+}
+.footer-container {
+ width: 20%;
+
+}
+
+.footer-container h1 {
+  color: white;
+  padding-top: 40px;
+}
+
+.footer-nav {
+  width: 30%;
+  padding-top: 60px;
+  margin-left: 200px;
+}
+
+.footer-lists {
+  margin: 0;
+  padding: 0;
+  font-family: serif;
+  display: flex;
+  justify-content: space-around;
+}
+
+.footer-lists li {
+  color: white;
+
+}
