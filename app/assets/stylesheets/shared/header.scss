@@ -1,0 +1,37 @@
+header{
+  height: 80px;
+  width: 100%;
+  background-color: rgba(230, 236, 230, 0.61);
+  top: 0;
+  z-index: 1000;
+  position: fixed;
+  display: flex;
+}
+.header-left {
+  width: 60%;
+} 
+
+.far {
+  font-family: "Font Awesome 5 Free";
+  width: 124px;
+  margin-top: 20px;
+  margin-left: 20px;
+}
+.nav-bar {
+  width: 40%;
+  padding-top: 30px;
+}
+  
+.nav-lists {
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: space-around;
+  font-family: serif;
+}
+
+.nav-lists :hover {
+  background-color: rgba(2, 2, 2, 0.274);
+  border-radius: 20px 30px;
+}
+
