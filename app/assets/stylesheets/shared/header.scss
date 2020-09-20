@@ -7,6 +7,11 @@ header{
   position: fixed;
   display: flex;
 }
+
+.header-left a {
+  text-decoration: none;
+  color: black;
+}
 .header-left {
   width: 60%;
 } 
@@ -18,20 +23,42 @@ header{
   margin-left: 20px;
 }
 .nav-bar {
-  width: 40%;
+  text-decoration: none;
+  width: 60%;
   padding-top: 30px;
 }
   
 .nav-lists {
+  text-decoration: none;
   margin: 0;
   padding: 0;
+  list-style: none;
   display: flex;
   justify-content: space-around;
   font-family: serif;
 }
 
 .nav-lists :hover {
-  background-color: rgba(2, 2, 2, 0.274);
+  text-decoration: none;
+  background-color: rgba(2, 2, 2, 0.171);
   border-radius: 20px 30px;
 }
 
+.header-news {
+  text-decoration: none;
+  color: black;
+}
+
+.header-construction {
+  text-decoration: none;
+  color: black;
+}
+.header-information {
+  text-decoration: none;
+  color: black;
+}
+
+.header-contact {
+  text-decoration: none;
+  color: black;
+}
