@@ -22,3 +22,18 @@ Things you may want to cover:
 * Deployment instructions
 
 * ...
+
+## アプリケーション概要 
+ 篠原工務店 ホームページ 家を建てるために悩んでいる人を後押しできるように
+## URL
+ https://shinohara-hp.herokuapp.com/
+## テスト用アカウント
+## 利用方法
+ 
+## 目指した課題解決
+## 洗い出した要件
+## 実装した機能についてのGIFと説明
+## ローカルでの動作方法
+
+
+## データベース設計
