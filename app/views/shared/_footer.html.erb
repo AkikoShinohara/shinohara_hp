@@ -5,10 +5,10 @@
   </div>
   <div class="information-nav">
     <ul class="information-lists">
-      <li><%= link_to '最新情報',  method: :get, class: "footer-news"%></li>
-      <li><%= link_to '施工例',  method: :get, class: "footer-construction"%></li>
-      <li><%= link_to '会社案内', informations_show_path, method: :get, class: "footer-information"%></li>
-      <li><%= link_to 'お問い合わせ',  method: :get, class: "footer-contact"%></li>
+      <li><%= link_to '最新情報',posts_path, class: "footer-news"%></li>
+      <li><%= link_to '施工例', class: "footer-construction"%></li>
+      <li><%= link_to '会社案内', abouts_path, class: "footer-information"%></li>
+      <li><%= link_to 'お問い合わせ',  class: "footer-contact"%></li>
     </ul>
   </div>
 </div>

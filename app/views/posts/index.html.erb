@@ -1,0 +1,14 @@
+<%= render "shared/header"%> 
+<div class="wrapper">
+<%= image_tag "image07.png", class:"show-pict1" %>
+  <%= form_with url: "/posts", method: :post,id: "form" do |form| %>
+    <%= form.text_field :content %>
+    <%= form.submit '投稿する' , id: "submit" %>
+  <% end %>
+
+  <div id="list"></div>
+
+  <% @posts.each do |post| %>
+  <% end %>
+</div>
+<%= render "shared/footer"%>
