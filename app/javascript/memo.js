@@ -16,7 +16,7 @@ function memo() {
             投稿日時：${item.created_at}
           </div>
           <div class="post-content">
-          ${item.contents}
+          ${item.content}
           </div>
         </div>`;
       list.insertAdjacentHTML("afterend", HTML);
@@ -38,4 +38,4 @@ function memo() {
 
   })
 }
-window.addEventListener("load", memo);
+window.addEventListener("turbolinks:load", memo);
