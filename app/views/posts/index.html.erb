@@ -1,14 +1,23 @@
 <%= render "shared/header"%> 
-<div class="wrapper">
-<%= image_tag "image07.png", class:"show-pict1" %>
-  <%= form_with url: "/posts", method: :post,id: "form" do |form| %>
-    <%= form.text_field :content %>
-    <%= form.submit '投稿する' , id: "submit" %>
-  <% end %>
+<div class="wrapper-h">
+  <div class="wapper-aa"> 
+    <%= form_with url: "/posts", method: :post,id: "form" do |form| %>
+      <%= form.text_field :content %>
+      <%= form.submit '投稿する' , id: "submit" %>
+    <% end %>
 
-  <div id="list"></div>
+    <% @posts.each do |post| %>
+    <div class="post">
+      <div class="post-date">
+        投稿日時：<%= post.created_at %>
+      </div>
+      <div class="post-content">
+        <%= post.content %>
+      </div>
+    </div>
+    <% end %>
+    <div id="list"></div>
+  </div> 
 
-  <% @posts.each do |post| %>
-  <% end %>
 </div>
 <%= render "shared/footer"%>
