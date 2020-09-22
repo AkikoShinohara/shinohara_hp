@@ -11,7 +11,7 @@ function memo() {
       const list = document.getElementById("list");
       const formText = document.getElementById("content");
       const HTML = `
-        <div class="post" data-id=${item.id}>
+        <div class="post" >
           <div class="post-date">
             投稿日時：${item.created_at}
           </div>
@@ -22,7 +22,6 @@ function memo() {
       list.insertAdjacentHTML("afterend", HTML);
 
       formText.value = "";
-
       if (XHR.status != 200) {
         alert(`Error ${XHR.status}: ${XHR.statusText}`);
       } else {
@@ -38,4 +37,4 @@ function memo() {
 
   })
 }
-window.addEventListener("turbolinks:load", memo);
+window.addEventListener("load", memo);
