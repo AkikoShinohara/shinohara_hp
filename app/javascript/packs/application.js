@@ -9,7 +9,8 @@ require("@rails/activestorage").start()
 require("channels")
 require("../youtube")
 require("../jquery.tubular.1.0")
-require('jquery')
+require("jquery")
+require("../memo")
 
 // Uncomment to copy all static images under ../images to the output folder and reference
 // them with the image_pack_tag helper in views (e.g <%= image_pack_tag 'rails.png' %>)

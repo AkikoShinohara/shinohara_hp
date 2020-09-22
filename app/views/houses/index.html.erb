@@ -29,10 +29,10 @@
   </div>
   <div class="footer-nav">
     <ul class="footer-lists">
-      <li><%= link_to '最新情報',  method: :get, class: "news"%></li>
-      <li><%= link_to '施工例',  method: :get, class: "construction"%></li>
-      <li><%= link_to '会社案内', informations_show_path, method: :get, class: "information"%></li>
-      <li><%= link_to 'お問い合わせ',  method: :get, class: "contact"%></li>
+      <li><%= link_to '最新情報', posts_path, class: "news"%></li>
+      <li><%= link_to '施工例',  class: "construction"%></li>
+      <li><%= link_to '会社案内', abouts_path, class: "information"%></li>
+      <li><%= link_to 'お問い合わせ',   class: "contact"%></li>
     </ul>
   </div>
 </footer>
