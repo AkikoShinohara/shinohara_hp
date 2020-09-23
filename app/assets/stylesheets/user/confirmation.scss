@@ -1,0 +1,25 @@
+.wrapper-h {
+  height: 100vh;
+  width: 100%;
+  background-image: image-url("image07.png");
+  background-size: cover;
+}
+
+.wapper-aa {
+  position: absolute;
+  top: 100px;
+  width: 100%;
+}
+
+.wapper-aa > h2 {
+  text-align: center;
+  margin-top: 150px;
+}
+
+.field {
+  text-align: center;
+}
+
+.actions {
+  text-align: center;
+}

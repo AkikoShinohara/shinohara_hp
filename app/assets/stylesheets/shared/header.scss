@@ -1,3 +1,7 @@
+* {
+  font-family: serif;
+}
+
 header{
   height: 80px;
   width: 100%;
@@ -13,52 +17,76 @@ header{
   color: black;
 }
 .header-left {
-  width: 60%;
+  width: 50%;
 } 
 
 .far {
   font-family: "Font Awesome 5 Free";
-  width: 124px;
   margin-top: 20px;
   margin-left: 20px;
 }
 .nav-bar {
   text-decoration: none;
-  width: 60%;
+  width: 40%;
   padding-top: 30px;
 }
   
-.nav-lists {
+.nav-bar > ul {
   text-decoration: none;
   margin: 0;
-  padding: 0;
+  padding-left: 100px;
   list-style: none;
   display: flex;
   justify-content: space-around;
-  font-family: serif;
 }
 
-.nav-lists :hover {
+.nav-bar > ul > li :hover {
   text-decoration: none;
   background-color: rgba(2, 2, 2, 0.171);
   border-radius: 20px 30px;
 }
 
+
 .header-news {
   text-decoration: none;
   color: black;
+  padding-left: 5px;
 }
 
 .header-construction {
   text-decoration: none;
   color: black;
+  padding-left: 5px;
 }
 .header-information {
   text-decoration: none;
   color: black;
+  padding-left: 5px;
 }
 
 .header-contact {
   text-decoration: none;
   color: black;
+  padding-left: 5px;
+}
+
+.nav {
+  width: 10%;
+  padding-top: 16px;
+  text-decoration: none;
+}
+
+.nav > ul {
+  color: black;
+  text-decoration: none;
+  list-style: none;
+  font-family: serif;
+  padding-top: 10px;
+  padding-left: 10px;
+}
+
+
+.fas {
+  color: black;
+  padding-left: 50px;
 }

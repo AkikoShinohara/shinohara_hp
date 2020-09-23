@@ -2,8 +2,10 @@
 <div class="wrapper-h">
   <div class="wapper-aa"> 
     <%= form_with url: "/posts", method: :post ,id: "form" do |form| %>
-      <%= form.text_field :content, id: "content" %>
-      <%= form.submit '投稿する' , id: "submit" %>
+      <% if user_signed_in? && current_user.id %>
+        <%= form.text_field :content, id: "content" %>
+        <%= form.submit '投稿する' , id: "submit" %>
+      <% end %>
     <% end %>
     <div id="list"></div>
     <% @posts.each do |post| %>

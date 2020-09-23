@@ -5,4 +5,6 @@ Rails.application.routes.draw do
   resources :houses, only: [:index]
   resources :abouts, only: [:index]
   resources :posts, only: [:index, :create]
+  resources :contacts
+  resources :constructions, only: [:index]
 end
