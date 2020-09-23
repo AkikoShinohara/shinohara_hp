@@ -60,3 +60,4 @@ end
 gem 'pry-rails'
 gem "jquery-rails"
 gem 'font_awesome5_rails'
+gem 'devise'
