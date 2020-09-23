@@ -15,12 +15,12 @@
     </div>
     <div class="second-container">
       <h5>外断熱パネル工法、アルミ箔が 熱を跳ね返し家全体を保温。<br>床暖房も空気の熱を使ったヒートポンプ式を採用。<br>ダイニングにはテラコッタ調のタイル張りホール、廊下にも真っ白なタイル床暖房ですから夏は涼しく、冬暖かい。</h5>
-        <%= image_tag "image15.png", class:"pict4"%>
-        <%= image_tag "image21.png", class:"pict5"%>
-        <%= image_tag "image22.png", class:"pict6" %>
+      <%= image_tag "image15.png", class:"pict4"%>
+      <%= image_tag "image21.png", class:"pict5"%>
+      <%= image_tag "image22.png", class:"pict6" %>
     </div>  
   </div>
-  <div class="contact"></div>
+  <div class="footer-line"></div>
 </div>
 <footer>
   <div class="footer-logo">篠原工務店</div>
@@ -28,11 +28,11 @@
   <h1>〒392-0015<br>長野県諏訪市中洲5455-45<br>TEL: 0266-57-5788</h1>
   </div>
   <div class="footer-nav">
-    <ul class="footer-lists">
+    <ul>
       <li><%= link_to '最新情報', posts_path, class: "news"%></li>
-      <li><%= link_to '施工例',  class: "construction"%></li>
+      <li><%= link_to '施工例', constructions_path, class: "construction"%></li>
       <li><%= link_to '会社案内', abouts_path, class: "information"%></li>
-      <li><%= link_to 'お問い合わせ',   class: "contact"%></li>
+      <li><%= link_to 'お問い合わせ', contacts_path, class: "contact"%></li>
     </ul>
   </div>
 </footer>
