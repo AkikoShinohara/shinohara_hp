@@ -1,0 +1,15 @@
+<%= render "shared/header"%> 
+<div class="wrapper-h">
+  <div class="wapper-aa"> 
+    <h1>Contact Form..</h1>
+    <form>
+      <%= form_with model: @inquiry, method: :post, local: true do |form| %>
+        <input type="text" name="name" placeholder="NAME" class="small-field">
+        <input type="text" name="email" placeholder="e-mail" class="small-field">
+        <textarea  name="message" placeholder="MESSAGE" class="large-field"></textarea>
+        <input type="submit" value="SEND" class="send">
+      <% end %>
+    </form>
+  </div> 
+</div>
+<%= render "shared/footer"%>
