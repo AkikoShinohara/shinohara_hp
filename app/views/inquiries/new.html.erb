@@ -1,0 +1,13 @@
+<%= render "shared/header"%> 
+<div class="wrapper-h">
+  <div class="wapper-aa"> 
+    <h1>Contact Form..</h1>
+    <%= form_with model: @inquiry, local: true do |f| %>
+      <%= f.text_field :name, placeholder: "NAME", class: "small-field" %>
+      <%= f.text_field :email, placeholder: "e-mail", class: "small-field" %>
+      <%= f.text_area :message, placeholder: "MESSAGE", class: "large-field" %>
+      <%= f.submit "SEND", class: "send" %>
+    <% end %>
+  </div>
+</div>
+<%= render "shared/footer" %>  

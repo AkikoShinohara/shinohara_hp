@@ -1,22 +1,21 @@
 class InquiriesController < ApplicationController
-  def index
-  end
-
   def new
     @inquiry = Inquiry.new
   end
+
   def create
-    binding.pry
-    @inquiry = Inquiry.create(inquiry_params)    #ここでフォームの入力内容をDBに保存する
-    @inquiry.save
-    # if @inquiry.save        #もし保存ができたら、下記を実行
-    # InquiryMailer.send_mail(@inquiry).deliver     #3項で作成したメソッドの実行
-    # end
+    @inquiry = Inquiry.new(inquiry_params)
+    if @inquiry.save 
+      InquiryMailer.send_mail(@inquiry).deliver_now
+      redirect_to root_path
+    else
+      render :new
+    end
   end
 
 
   private
     def inquiry_params
-        params.permit(:name, :email, :message)        #保存するカラムを限定する
+      params.require(:inquiry).permit(:name, :email, :message)
     end
 end

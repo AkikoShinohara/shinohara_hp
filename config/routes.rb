@@ -5,6 +5,6 @@ Rails.application.routes.draw do
   resources :houses, only: [:index]
   resources :abouts, only: [:index]
   resources :posts, only: [:index, :create]
-  resources :inquiries, only: [:index, :new, :create]
+  resources :inquiries, only: [:new, :create]
   resources :constructions, only: [:index]
 end
