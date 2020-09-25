@@ -18,9 +18,9 @@ ActiveRecord::Schema.define(version: 2020_09_23_064854) do
   end
 
   create_table "inquiries", options: "ENGINE=InnoDB DEFAULT CHARSET=utf8", force: :cascade do |t|
-    t.string "name", null: false
-    t.string "email", null: false
-    t.text "message", null: false
+    t.string "name"
+    t.string "email"
+    t.text "message"
     t.datetime "created_at", precision: 6, null: false
     t.datetime "updated_at", precision: 6, null: false
   end
