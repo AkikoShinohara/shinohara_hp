@@ -6,5 +6,5 @@ Rails.application.routes.draw do
   resources :abouts, only: [:index]
   resources :posts, only: [:index, :create]
   resources :inquiries, only: [:new, :create]
-  resources :constructions, only: [:index]
+  resources :constructions, only: [:index, :new, :create]
 end
