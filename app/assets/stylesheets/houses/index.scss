@@ -112,6 +112,57 @@
   left: 100px;
 }
 
+.pict7 {
+  z-index: 400;
+  width: 45vh;
+  height: 40vh;
+
+  position: absolute;
+  top: 1650px;
+  left: 180px;
+}
+
+.pict8 {
+  z-index: 400;
+  width: 45vh;
+  height: 40vh;
+
+  position: absolute;
+  top: 1650px;
+  left: 590px;
+}
+.pict9 {
+  z-index: 400;
+  width: 45vh;
+  height: 40vh;
+
+  position: absolute;
+  top: 1650px;
+  left: 1000px;
+}
+
+.second-container h6 {
+  font-size: 25px;
+  margin-left: 0 0 0 90px;
+  z-index: 150;
+  width: 200px;
+  border-bottom: black solid 1px;
+
+  position: absolute;
+  top: 1600px;
+  left: 40px;
+}
+
+.three-container {
+  width: 100%;
+  height: 400px;
+  z-index: 100;
+  position: absolute;
+  top: 1600px;
+  opacity: 0.5;
+  background-color: white;
+}
+
 .footer-line {
   width: 100%;
   height: 50px;
@@ -176,15 +227,15 @@ footer {
 
 
 
-/* スマートフォンの設定 */
+
 @media screen and (max-width: 768px){
 
-  #tubular-container iframe {/* ←スマートフォンの際には、tubular は非表示化します */
+  #tubular-container iframe {
       display: none;
   }
 
   #top-wrapper{
-    background-image: url(https://source.unsplash.com/random);      /* ←代替えの静止画を設定します */
+    background-image: url(https://source.unsplash.com/random);      
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
