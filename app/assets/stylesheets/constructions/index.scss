@@ -1,92 +1,73 @@
-.wrapper-hh {
-  // height: calc(100vh-80px);
+.wrapper-a {
   width: 100%;
   background-image: image-url("image07.png");
   background-size: cover;
 }
 
-.wapper-aaa {
+.wapper-b {
   height: calc(100vh - 80px);
   margin-top: 80px;
 }
 
+.wapper-b > h1 {
+  width: 3%;
+  font-size: 28px;
+  font-weight: bold;
+  position: absolute;
+  top: 130px;
+  left: 40px;
+  text-align: center;
+  border-top: 1px solid black;
+  border-bottom: 1px solid black;
+  opacity: 0.8;
+}
 /* 一覧 */
-// .item-contents {
-//   background-color: #FFF;
-//   display: flex;
-//   flex-direction: column;
-//   align-items: center;
-//   padding: 10vh 0;
-// }
+.item-contents {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
 
-// .item-contents>.title {
-//   font-size: 5vh;
-//   line-height: 1.4;
-//   font-weight: bold;
-// }
+.item-lists {
+  width: calc(100vw - 10vw);
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin-left: 5vw;
+}
 
-// .item-contents>.subtitle {
-//   font-size: 3vh;
-//   margin: 1vh 0;
-//   text-decoration: none;
-//   color: #3ccace;
-//   font-weight: bold;
-// }
-
-// .item-lists {
-//   width: 100vw;
-//   display: flex;
-//   flex-wrap: wrap;
-//   justify-content: center;
-// }
-
-// .item-lists>.list {
-//   width: 37vh;
-//   padding: 1vw;
-//   background-color: #FFF;
-// }
+.item-lists>.list {
+  width: 35vh;
+  padding: 1vw;
+}
 
 
-// .item-img-content {
-//   position: relative;
-// }
+.item-img-content {
+  position: relative;
+}
 
-// .item-img {
-//   width: 33vh;
-//   height: 33vh;
-// }
+.item-img {
+  width: 25vh;
+  height: 25vh;
+}
 
-// .sold-out {
-//   position: absolute;
-//   top: 40%;
-//   width: 100%;
-//   text-align: center;
-//   background-color: crimson;
-//   transform: skewY(-10deg);
-// }
+.item-info {
+  color: black;
+  padding: 1vw;
+}
 
-// .sold-out>span {
-//   color: #FFF;
-//   font-size: 45px;
-//   font: bold;
-// }
-
-
-// .item-info {
-//   background-color: #FFF;
-//   color: black;
-//   padding: 1vw;
-// }
-
-// .item-name {
-//   font-size: 2.5vh;
-// }
+.item-name {
+  font-size: 2.5vh;
+  color: black;
+  text-decoration: none;
+}
 
 // 投稿ボタン
-// .purchase-btn {
-//   padding-top: 650px;
-//   padding-left: 1300px;
-// }
+.purchase-btn {
+  position: absolute;
+  top: 600px;
+  left: 1350px;
+}
 
 .purchase-btn-icon {
   

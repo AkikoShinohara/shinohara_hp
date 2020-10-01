@@ -1,32 +1,38 @@
 <%= render "shared/header"%> 
-<div class="wrapper-hh">
-  <div class="wapper-aaa"> 
-    <h1>Constructions..</h1>
+<div class="wrapper-a">
+  <div class="wapper-b"> 
+    <h1>施工例</h1>
+
     <%# /施工例画像と名前%>
-    <%# <div class='item-contents'>
-      <% @constructions.each do |construction|%>
-      <%# <li class='list'> %>
-        <%# <%= link_to method: :get  do %> %>
-        <%# <div class='item-img-content'> %>
-          <%# <%= image_tag construction.image , class: "item-img" if construction.image.attached? %> %>
-        <%# </div> %>
-        <%# <div class='item-info'> %>
-          <%# <h3 class='item-name'> %>
-            <%# <%= construction.name %> %>
-          <%# </h3> %>
-        <%# </div> %>
-        <%# <% end %> %>
-      <%# </li> %>
-      <%# <% end %> %>
-    <%# </ul> %>
-    <%# </div> %>
+    <div class="item-contents">
+      <ul class="item-lists">
+        <% @constructions.each do |construction|%>
+        <li class="list">
+          <%= link_to construction_path(construction.id),  method: :get, class: "item-name"  do %>
+          <div class="item-img-content">
+            <%= image_tag construction.image , class: "item-img" if construction.image.attached? %>
+          </div>
+          <div class="item-info">
+            <h3 class="item-name">
+              <%= construction.name %>
+            </h3>
+          </div>
+          <% end %>
+        </li>
+        <% end %>
+      </ul>
+    <div> 
   
     <%# //施工例一覧 %>
   </div>
 </div>
-<%# <div class='purchase-btn'>
-  <a href="/constructions/new">
-  <%= image_tag 'construction.png' , size: '50x30' ,class: "purchase-btn-icon" %>
-  <%# </a> %>
-<%# </div>  %> 
+<%# 投稿ボタン%>
+<div class="purchase-btn">
+  <% if user_signed_in? %>
+    <a href="/constructions/new">
+    <%= image_tag 'wraite.png' , size: '50x30' ,class: "purchase-btn-icon" %>
+    </a> 
+  <% end %>
+ </div>  
+<%# 投稿ボタン%>
 <%= render "shared/footer"%>
