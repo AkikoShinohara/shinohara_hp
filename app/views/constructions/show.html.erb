@@ -1,0 +1,24 @@
+<%= render "shared/header"%> 
+<div class="wrapper-c">
+  <div class="wapper-d"> 
+    <div class="item-box">
+      <div class="box">
+        <h1 class="name">
+          <%= @construction.name %>
+        </h1>
+        <h2 class="message">
+          <%= @construction.message %>
+        </h2>
+      </div>
+      <%#= image_tag @construction.image, class:"item-box-img" %>
+      <div class="bar">
+        <%= image_tag @construction.image, class:"item-box-img" %>
+        <% if user_signed_in? && current_user.id == @construction.user_id %>
+          <%= link_to '編集', edit_construction_path(@construction.id), method: :get, class: "item-red-btn" %>
+          <p class='or-text'>or</p>
+          <%= link_to '削除', construction_path(@construction.id), method: :delete, class:'item-destroy' %>
+        <% end %>
+      </div>
+    </div>
+  </div>
+</div>
