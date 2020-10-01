@@ -1,0 +1,34 @@
+<%= render "shared/header"%> 
+<div class="wrapper-d">
+  <div class="wapper-e"> 
+    <h1>投稿編集画面</h1>
+    <%= form_with model: @construction,  local: true do |f| %>  
+    <%#= render 'shared/error_messages', model: f.object %>
+    <%# 投稿画像 %>
+    <div class="image-upload">
+      <div class="weight-bold-text">
+        投稿画像
+        <span class="indispensable">必須</span>
+      </div>
+      <div class="click-upload">
+        <p>
+          クリックしてファイルをアップロード
+        </p>
+        <%= f.file_field :image, id:"item-image" %>
+      </div>
+    </div>
+    <%# /投稿画像 %>
+    <%# 施工例名とメッセージ %>
+    <div class="new-items">
+      <%= f.text_field :name, class:"items-name", id:"item-name", placeholder:"施工名", maxlength:"30" %>
+      <%= f.text_area :message, class:"items-text", id:"item-info", placeholder:"住宅の説明(篠原工務店 自宅＆ショールームなど...)" ,rows:"7" ,maxlength:"1000" %>
+    </div>
+    <%# /施工名とメッセージ %>
+    <%# 下部ボタン %>
+    <div class="push-btn-contents">
+      <%= f.submit "投稿する" ,class:"push-btn" %>
+    </div>
+    <%# /下部ボタン %>
+  <% end %>
+  </div>
+</div>

@@ -72,7 +72,6 @@ Things you may want to cover:
 | -------------------| ---------- | ------------------------------- |
 | name               | string     | null: false                     |
 | message            | text       | null: false                     |
-| post_date          | date       | null: false                     |
 | user               | references | null: false , foreign_key: true |
 
 ### Association

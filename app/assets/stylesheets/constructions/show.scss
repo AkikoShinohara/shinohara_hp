@@ -1,0 +1,57 @@
+.wrapper-c {
+  width: 100%;
+  background-image: image-url("image30.png");
+  background-size: cover;
+}
+
+.wapper-d {
+  height: calc(100vh - 80px);
+  margin-top: 80px;
+}
+
+.item-box {
+  display: flex;
+  flex-direction: row;
+  padding: 5vh 0 0 10vw;
+}
+
+.box {
+  flex-direction: column;
+  padding-top: 2vh;
+  width: 35%;
+}
+.box>.name {
+  font-weight: bold;
+  font-size: 25px;
+}
+
+.box>.message {
+  padding-top: 3vh;
+}
+
+.item-box-img {
+  height: 40vh;
+  min-height: 400px;
+  padding-left: 10vw;
+  object-fit: contain;
+}
+
+.bar {
+  display: flex;
+  flex-direction: column;
+}
+
+.item-red-btn {
+  color: black;
+  padding-top: 4vh;
+  padding-left: 30vh;
+}
+
+.item-destroy {
+  color: black;
+  padding-left: 30vh;
+}
+.or-text {
+  color: black;
+  padding-left: 30vh;
+}
