@@ -8,6 +8,7 @@
   background-size: cover;
 }
 
+
 .left-container {
   position: absolute;
   top: 300px;
@@ -32,7 +33,7 @@
 
 .pict1 {
   z-index: 100;
-  width: 1450px;
+  width: 100vw;
   position: absolute;
 }
 
@@ -173,7 +174,6 @@
 }
 
 footer {
-  height: 150px;
   width: 100%;
   background-color: rgba(2, 2, 68, 0.774);
   z-index: 1000;
@@ -185,7 +185,7 @@ footer {
 .footer-logo {
   width: 20%;
   color: white;
-  padding: 60px 0 50px 50px;
+  padding: 5C0px 0 50px 50px;
 }
 
 .footer-container h1 {
@@ -195,7 +195,7 @@ footer {
 
 .footer-nav {
   width: 63%;
-  padding-top: 60px;
+  padding: 58px 0;
   text-decoration: none;
 }
 
