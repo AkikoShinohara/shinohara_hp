@@ -3,12 +3,12 @@
 }
 
 header{
-  height: 80px;
-  width: 100%;
+  width: 100vw;
   background-color: rgba(230, 236, 230, 0.61);
-  top: 0;
   z-index: 1000;
   position: fixed;
+  justify-content: space-between;
+  top: 100;
   display: flex;
 }
 
@@ -25,19 +25,15 @@ header{
   margin-top: 20px;
   margin-left: 20px;
 }
-.nav-bar {
-  text-decoration: none;
-  width: 40%;
-  padding-top: 30px;
-}
-  
+
 .nav-bar > ul {
-  text-decoration: none;
-  margin: 0;
-  padding-left: 100px;
-  list-style: none;
   display: flex;
-  justify-content: space-around;
+  justify-content: flex-end;
+  margin: 30px 30px;
+}
+
+.nav-bar > ul > li{
+  text-decoration: none;
 }
 
 .nav-bar > ul > li :hover {
@@ -50,24 +46,24 @@ header{
 .header-news {
   text-decoration: none;
   color: black;
-  padding-left: 5px;
+  padding: 0 20px;
 }
 
 .header-construction {
   text-decoration: none;
   color: black;
-  padding-left: 5px;
+  padding: 0 20px;
 }
 .header-information {
   text-decoration: none;
   color: black;
-  padding-left: 5px;
+  padding: 0 20px;
 }
 
 .header-contact {
   text-decoration: none;
   color: black;
-  padding-left: 5px;
+  padding: 0 20px;
 }
 
 .nav {

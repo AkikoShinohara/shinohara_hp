@@ -9,200 +9,137 @@
 }
 
 
-.left-container {
-  position: absolute;
-  top: 300px;
-  z-index: 3;
+.top-container {
+  position: relative;
+  padding: 300px 0;
+  z-index: 300;
 }
-.left-container h1 {
+
+.top-container h1 {
+  width: 100%;
   font-size: 45px;
+  display: inline-block;
   text-align: center;
-  color: black;
-  background-color: rgba(255, 255, 255, 0.541);
-}
-.left-container h2 {
-  font-size: 30px;
-  color: black;
   background-color: rgba(255, 255, 255, 0.541);
 }
 
-
+.top-container h2 {
+  width: 100%;
+  font-size: 28px;
+  background-color: rgba(255, 255, 255, 0.541);
+  display: inline-block;
+  text-align: center;
+}
+/* main first */
 .main-wrapper {
   position: relative;
-}
-
-.pict1 {
-  z-index: 100;
-  width: 100vw;
-  position: absolute;
-}
-
-.pict2 {
+  background-image: image-url("image02.png");
+  background-size: cover;
   z-index: 400;
-  width: 45vh;
-  height: 60vh;
-  opacity: 0.9;
-
-  position: absolute;
-  top: 150px;
-  left: 550px;
 }
 
-.pict3 {
-  z-index: 300;
-  width: 60vh;
-  height: 30vh;
+.f-contents {
+  padding: 50px 0;
+}
+
+.f-contents > ul {
+  display: flex;
+  flex-direction: row-reverse;
+  padding: 100px 0; 
+}
+
+.f-contents div {
+  font-size: 18px;
+  font-weight: 600;
+  margin: 100px 50px;
+}
+
+.img01 {
+  opacity: 0.9;
+}
+
+.img02 {
+  padding-top: 200px;
   opacity: 0.6;
-
-  position: absolute;
-  top: 350px;
-  left: 90px;
+}
+/* main second */
+.s-contents > div {
+  font-size: 18px;
+  font-weight: 600;
+  margin: 100px 50px;
 }
 
-
-.first-container h4 {
-  font-size: 20px;
-  z-index: 150;
-
-  position: absolute;
-  top: 230px;
-  left: 970px;
+.s-contents > ul{
+  display: flex;
+  flex-direction: row-reverse;
+  margin: 0 4vw;
 }
 
-
-.second-container h5 {
-  font-size: 19px;
-  margin-left: 0 0 0 90px;
-  z-index: 150;
-
-  position: absolute;
-  top: 760px;
-  left: 90px;
-}
-
-.pict4 {
-  z-index: 400;
-  width: 60vh;
-  height: 30vh;
+.img03 {
   opacity: 0.9;
-
-  position: absolute;
-  top: 990px;
-  left: 540px;
 }
-
-.pict5 {
-  z-index: 400;
-  width: 45vh;
-  height: 60vh;
+.img04 {
   opacity: 0.9;
-  
-  position: absolute;
-  top: 920px;
-  left: 990px;
-}
+  padding-top: 100px;
 
-.pict6 {
-  z-index: 400;
-  width: 60vh;
-  height: 40vh;
+}
+.img05 {
   opacity: 0.7;
-
-  position: absolute;
-  top: 1200px;
-  left: 100px;
+  padding-top: 280px;
+}
+/* main third */
+.t-contents {
+  padding: 100px 30px;
 }
 
-.pict7 {
-  z-index: 400;
-  width: 45vh;
-  height: 40vh;
-
-  position: absolute;
-  top: 1650px;
-  left: 180px;
+.t-content {
+  background-color: rgba(255, 255, 255, 0.384);
+  margin: 10px auto;
 }
 
-.pict8 {
-  z-index: 400;
-  width: 45vh;
-  height: 40vh;
-
-  position: absolute;
-  top: 1650px;
-  left: 590px;
-}
-.pict9 {
-  z-index: 400;
-  width: 45vh;
-  height: 40vh;
-
-  position: absolute;
-  top: 1650px;
-  left: 1000px;
-}
-
-.second-container h6 {
+.t-content > div {
   font-size: 25px;
-  margin-left: 0 0 0 90px;
-  z-index: 150;
-  width: 200px;
-  border-bottom: black solid 1px;
-
-  position: absolute;
-  top: 1600px;
-  left: 40px;
 }
 
-.three-container {
-  width: 100%;
-  height: 400px;
-  z-index: 100;
-  position: absolute;
-  top: 1600px;
-  opacity: 0.5;
-  background-color: white;
-}
-
-.footer-line {
-  width: 100%;
-  height: 50px;
-  z-index: 400;
-  position: absolute;
-  top: 2800px;
-  background-color: rgba(185, 166, 136, 0.562);
-}
-
-footer {
-  width: 100%;
-  background-color: rgba(2, 2, 68, 0.774);
-  z-index: 1000;
+.t-content > ul {
   display: flex;
-
-  position: absolute;
-  top: 2825px;
+  justify-content: space-around;
 }
-.footer-logo {
-  width: 20%;
+
+.t-content > ul > li {
+  margin: 20px auto;
+}
+/* footer */
+.footer-wrapper {
+  background-color: rgba(2, 2, 68, 0.685);
+}
+
+.footer-contents {
   color: white;
-  padding: 5C0px 0 50px 50px;
-}
-
-.footer-container h1 {
-  color: white;
-  padding-top: 40px;
-}
-
-.footer-nav {
-  width: 63%;
-  padding: 58px 0;
-  text-decoration: none;
-}
-
-.footer-nav > ul {
   display: flex;
-  text-decoration: none;
-  padding-left: 300px;
+  justify-content: space-between;
+  padding: 0 100px;
+}
+
+.footer-left {
+  display: flex;
+}
+
+.footer-left > div {
+  margin: 10px 50px;   
+}
+
+.footer-tittle {
+  padding-top: 25px;
+}
+
+.footer-right > ul {
+  display: flex;
+  padding-top: 35px;
+}
+
+.footer-right li {
+  padding: 0 25px;
 }
 
 .news {
@@ -212,19 +149,15 @@ footer {
 .information {
   color: white;
   text-decoration: none;
-  padding-left: 50px;
 }
 .contact {
   color: white;
   text-decoration: none;
-  padding-left: 50px;
 }
 .construction {
   color: white;
   text-decoration: none;
-  padding-left: 50px;
 }
-
 
 
 
