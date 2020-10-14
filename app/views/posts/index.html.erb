@@ -1,6 +1,6 @@
 <%= render "shared/header"%> 
-<div class="wrapper-h">
-  <div class="wapper-aa"> 
+<div class="p-wrapper">
+  <div class="p-wapper"> 
     <%= form_with url: "/posts", method: :post ,id: "form" do |form| %>
       <% if user_signed_in? && current_user.id %>
         <%= form.text_field :content, id: "content" %>
@@ -11,7 +11,7 @@
     <% @posts.each do |post| %>
     <div class="post" >
       <div class="post-date">
-        投稿日時：<%= post.created_at %>
+        投稿日時：<%= l post.created_at %>
       </div>
       <div class="post-content">
         <%= post.content %>
