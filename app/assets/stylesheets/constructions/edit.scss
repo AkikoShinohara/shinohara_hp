@@ -1,21 +1,12 @@
 // 背景画像の設定・見出しの設定
 .wrapper-d{
-  width: 100%;
+  padding: 160px 0;
   background-image: image-url("image33.png");
   background-size: cover;
 }
 
-.wapper-e {
-  height: calc(100vh - 80px);
-  margin-top: 80px;
-}
-
 .wapper-e > h1 {
   width: 200px;
-  position: absolute;
-  top: 150px;
-  left: 150px;
-  font-size: 30px;
   border-bottom: 1px solid black;
   opacity: 0.8;
 }
@@ -23,9 +14,7 @@
 /* 投稿画像 */
 .image-upload {
   flex-wrap: wrap;
-  padding: 2vh 0;
-  padding-left: 485px;
-  padding-top: 130px;
+  margin: 0 35vw;
   color: white;
 }
 

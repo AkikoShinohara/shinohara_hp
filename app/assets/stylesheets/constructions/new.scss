@@ -1,13 +1,8 @@
 // 背景画像の設定・見出しの設定
 .wrapper-b {
-  width: 100%;
+  padding: 83px 0;
   background-image: image-url("image30.png");
   background-size: cover;
-}
-
-.wapper-c {
-  height: calc(100vh - 80px);
-  margin-top: 80px;
 }
 
 .wapper-c > h1 {

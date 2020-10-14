@@ -1,12 +1,12 @@
 .wrapper-a {
-  width: 100%;
-  background-image: image-url("image07.png");
+  background-image: image-url("image02.png");
   background-size: cover;
 }
 
 .wapper-b {
-  height: calc(100vh - 80px);
-  margin-top: 80px;
+  // height: 100vh;
+  // height: calc(100vh - 80px);
+  // margin-top: 80px;
 }
 
 .wapper-b > h1 {
@@ -33,12 +33,13 @@
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
-  margin-left: 5vw;
+  margin: 100px 5vw;
+  padding: 100px 0;
 }
 
 .item-lists>.list {
   width: 35vh;
-  padding: 1vw;
+  padding: 10px;
 }
 
 

@@ -1,23 +1,20 @@
-.wrapper-h {
-  height: 100vh;
-  width: 100%;
-  background-image: image-url("image07.png");
+.i-wrapper {
+  padding: 340px 0;
+  background-image: image-url("image02.png");
   background-size: cover;
 }
 
-.wapper-aa {
+.i-wapper {
   position: absolute;
   top: 100px;
   width: 100%;
   padding-top: 100px;
 }
 
-.wapper-aa h1 {
-  width: 13%;
-  font-size: 20px;
-  border-bottom: solid 1px black;
+
+.i-wapper h1 {
+  font-size: 25px;
   opacity: 0.8;
-  margin-left: 100px;
 }
 
 .small-field, .large-field {
