@@ -1,43 +1,64 @@
 <%= render "shared/header" %>
 <div class="main">
-  <div id="top-wrapper">
-    <div class="left-container">
+  <div id="top-wrapper"> 
+    <div class="top-container">
       <h1>健康に暮らせる家・永く愛着がもてる家</h1>
       <h2>プロの大工から見た監理・設計・施工でお客様の夢をカタチに。</h2>
     </div>
   </div>
-  <div class ="main-wrapper">
-    <div class="first-container">
-      <%= image_tag "image07.png", class:"pict1" %>
-      <h4>毎日くらす場所だから、<br>いつも、すこやかに、ここちよく過ごしたい。<br>家族の健康を考えて自然素材をできるだけ...</h4>
-      <%= image_tag "image16.png", class:"pict2"%>
-      <%= image_tag "image14.png", class:"pict3"%>
+  <!-- main背景 -->
+  <div class="top-wrapper">
+  </div>
+  <!-- main first -->
+  <div class="main-wrapper">
+    <div class="main-contents">
+      <div class="f-contents">
+        <ul>
+          <li><div>毎日くらす場所だから、<br>いつも、すこやかに、ここちよく過ごしたい。<br>家族の健康を考えて自然素材をできるだけ...</div></li>
+          <li class="img01"><%= image_tag"image03.png", width:"350", height:"500" %> </li>
+          <li class="img02"><%= image_tag"image04.png", width:"500", height:"250" %></li>
+        </ul>
+      </div>
+      <!-- main second -->
+      <div class="s-contents">
+        <div>外断熱パネル工法、アルミ箔が 熱を跳ね返し家全体を保温。<br>床暖房も空気の熱を使ったヒートポンプ式を採用。<br>ダイニングにはテラコッタ調のタイル張りホール、廊下にも真っ白なタイル床暖房ですから夏は涼しく、冬暖かい。</div>
+        <ul>
+          <li class="img03"><%= image_tag"image05.png", width:"350", height:"500" %></li>
+          <li class="img04"><%= image_tag"image06.png", width:"450", height:"230" %></li>
+          <li class="img05"><%= image_tag"image07.png", width:"500", height:"300" %></li>
+        </ul>
+      </div>
+      <!-- main third -->
+      <div class="t-contents">
+        <div class="t-content">
+          <div>Works.</div>
+          <ul>
+            <li><%= image_tag"image08.png", width:"350", height:"300" %></li>
+            <li><%= image_tag"image09.png", width:"350", height:"300"%></li>
+            <li><%= image_tag"image10.png", width:"350", height:"300"%></li>
+          </ul>
+        </div>
+      </div>
     </div>
-    <div class="second-container">
-      <h5>外断熱パネル工法、アルミ箔が 熱を跳ね返し家全体を保温。<br>床暖房も空気の熱を使ったヒートポンプ式を採用。<br>ダイニングにはテラコッタ調のタイル張りホール、廊下にも真っ白なタイル床暖房ですから夏は涼しく、冬暖かい。</h5>
-      <%= image_tag "image15.png", class:"pict4"%>
-      <%= image_tag "image21.png", class:"pict5"%>
-      <%= image_tag "image22.png", class:"pict6" %>
-      <h6>Works.</h6>
-      <%= image_tag "image24.png", class:"pict7" %>
-      <%= image_tag "image25.png", class:"pict8" %>
-      <%= image_tag "image27.png", class:"pict9" %>
-      <div class="three-container"></div>
-    </div>  
+    <!-- footer -->
+    <div class="footer-wrapper">
+      <div class="footer-contents">
+        <div class="footer-left">
+          <div class="footer-tittle"><p>篠原工務店</p></div>
+          <div><p>〒392-0015</p>
+               <p>長野県諏訪市中洲5455-45</p> 
+               <p>TEL: 0266-57-5788</p>
+          </div>
+        </div>
+        <div class="footer-right">
+          <ul>
+            <li><%= link_to '最新情報', posts_path, class: "news"%></li>
+            <li><%= link_to '施工例', constructions_path, class: "construction"%></li>
+            <li><%= link_to '会社案内', abouts_path, class: "information"%></li>
+            <li><%= link_to 'お問い合わせ', new_inquiry_path, class: "contact"%></li>
+          </ul>
+        </div>
+      </div>
+    </div>
   </div>
-  <div class="footer-line"></div>
 </div>
-<footer>
-  <div class="footer-logo">篠原工務店</div>
-  <div class="footer-container">
-  <h1>〒392-0015<br>長野県諏訪市中洲5455-45<br>TEL: 0266-57-5788</h1>
-  </div>
-  <div class="footer-nav">
-    <ul>
-      <li><%= link_to '最新情報', posts_path, class: "news"%></li>
-      <li><%= link_to '施工例', constructions_path, class: "construction"%></li>
-      <li><%= link_to '会社案内', abouts_path, class: "information"%></li>
-      <li><%= link_to 'お問い合わせ', new_inquiry_path, class: "contact"%></li>
-    </ul>
-  </div>
-</footer>

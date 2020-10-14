@@ -1,19 +1,17 @@
 .wrapper-c {
-  height: 100vh;
-  width: 100%;
+  padding: 130px 0;
   background-image: image-url("image30.png");
   background-size: cover;
 }
 
 .wapper-d {
-  height: calc(100vh - 80px);
-  margin-top: 80px;
+
 }
 
 .item-box {
   display: flex;
   flex-direction: row;
-  padding: 5vh 0 0 10vw;
+  padding-left: 10vw;
 }
 
 .box {
@@ -23,11 +21,12 @@
 }
 .box>.name {
   font-weight: bold;
-  font-size: 25px;
+  font-size: 20px;
 }
 
 .box>.message {
   padding-top: 3vh;
+  font-size: 13px;
 }
 
 .item-box-img {
@@ -55,4 +54,8 @@
 .or-text {
   color: black;
   padding-left: 30vh;
+}
+
+.button {
+  margin: 300px 0;
 }

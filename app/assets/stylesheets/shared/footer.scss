@@ -1,62 +1,48 @@
-.wrapper {
-  position: relative;
+.s-footer-wrapper {
+  background-color: rgba(230, 236, 230, 0.411);
 }
 
-.footer {
-  height: 89px;
-  width: 100%;
-  background-color: rgba(230, 236, 230, 0.452);
+.s-footer-contents {
+  color: black;
   display: flex;
-
-  position: absolute;
-  top: 700px;
-}
-.information-logo {
-  width: 20%;
-  color: black;
-  padding: 20px 0 0 20px;
-}
-.information-container {
- width: 20%;
+  justify-content: space-between;
+  padding: 0 100px;
 }
 
-.information-container h1 {
-  color: black;
-  padding-top: 10px;
-}
-
-.information-nav {
-  width: 40%;
-  padding-top: 30px;
-  margin-left: 200px;
-  text-decoration: none;
-}
-
-.information-lists {
-  margin: 0;
-  padding: 0;
-  font-family: serif;
+.s-footer-left {
   display: flex;
-  justify-content: space-around;
-  text-decoration: none;
-  list-style: none;
 }
 
-.footer-news {
-  text-decoration: none;
-  color: black;
+.s-footer-left > div {
+  margin: 10px 50px;   
 }
 
-.footer-construction {
-  text-decoration: none;
-  color: black;
-}
-.footer-information {
-  text-decoration: none;
-  color: black;
+.s-footer-tittle {
+  padding-top: 25px;
 }
 
-.footer-contact {
+.s-footer-right > ul {
+  display: flex;
+  padding-top: 35px;
+}
+
+.s-footer-right li {
+  padding: 0 25px;
+}
+
+.s-footer-news {
   text-decoration: none;
   color: black;
+}
+.s-footer-information {
+  color: black;
+  text-decoration: none;
+}
+.s-footer-contact {
+  color: black;
+  text-decoration: none;
+}
+.s-footer-construction {
+  color: black;
+  text-decoration: none;
 }
