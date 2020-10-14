@@ -50,5 +50,6 @@ test:
 production:
   <<: *default
   database: shinohara_hp_production
-  username: shinohara_hp
-  password: <%= ENV['SHINOHARA_HP_DATABASE_PASSWORD'] %>
+  username: root
+  password: <%= ENV['DATABASE_PASSWORD'] %>
+  socket: /var/lib/mysql/mysql.sock
