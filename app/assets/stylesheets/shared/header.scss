@@ -17,7 +17,7 @@ header{
   color: black;
 }
 .header-left {
-  width: 50%;
+  width: 40%;
 } 
 
 .far {
@@ -26,10 +26,15 @@ header{
   margin-left: 20px;
 }
 
+.nav-bar {
+  margin-left: 10vw;
+}
+
+
 .nav-bar > ul {
   display: flex;
   justify-content: flex-end;
-  margin: 30px 30px;
+  margin: 30px 20px;
 }
 
 .nav-bar > ul > li{
@@ -39,7 +44,7 @@ header{
 .nav-bar > ul > li :hover {
   text-decoration: none;
   background-color: rgba(2, 2, 2, 0.171);
-  border-radius: 20px 30px;
+  border-radius: 20px 20px;
 }
 
 
@@ -67,7 +72,7 @@ header{
 }
 
 .nav {
-  width: 10%;
+  width: 15%;
   padding-top: 16px;
   text-decoration: none;
 }
