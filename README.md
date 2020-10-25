@@ -1,5 +1,6 @@
 # 篠原工務店 コーポレートサイト[実用化に向け開発中] 
-[![Image from Gyazo](https://i.gyazo.com/76559f65c2c12e502a0661602641ec64.gif)](https://gyazo.com/76559f65c2c12e502a0661602641ec64)
+<a href="https://gyazo.com/76559f65c2c12e502a0661602641ec64"><video alt="Video from Gyazo" width="1000" autoplay muted loop playsinline controls><source src="https://i.gyazo.com/76559f65c2c12e502a0661602641ec64.mp4" type="video/mp4" /></video></a>
+
 
 # app name
 篠原工務店 コーポレートサイト
