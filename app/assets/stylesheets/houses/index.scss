@@ -1,6 +1,7 @@
 *{
   font-family: serif;
 }
+// top first
 #top-wrapper {
   height: 800px;/* ← 背景（動画）の高さを設定しています */
   width: 100%;
@@ -54,11 +55,16 @@
   margin: 100px 50px;
 }
 
-.img01 {
+img.img01 {
+  height: 500px;
+  width: 350px;
+  object-fit: cover;
   opacity: 0.9;
 }
 
-.img02 {
+img.img02 {
+  height: 250px;
+  width: 450px;
   padding-top: 200px;
   opacity: 0.6;
 }
@@ -75,21 +81,37 @@
   margin: 0 4vw;
 }
 
-.img03 {
+img.img03 {
+  height: 500px;
+  width: 300px;
+  object-fit: cover;
   opacity: 0.9;
 }
-.img04 {
+img.img04 {
+  height: 230px;
+  width: 450px;
+  object-fit: cover;
   opacity: 0.9;
   padding-top: 100px;
 
 }
-.img05 {
+img.img05 {
+  height: 300px;
+  width: 450px;
+  object-fit: cover;
   opacity: 0.7;
   padding-top: 280px;
 }
 /* main third */
+.t-wrapper {
+  margin: auto;
+  width: 100%;
+}
+
 .t-contents {
-  padding: 100px 30px;
+  margin: auto;
+  width: 98%;
+  padding: 100px 0;
 }
 
 .t-content {
@@ -109,6 +131,26 @@
 .t-content > ul > li {
   margin: 20px auto;
 }
+
+img.img06 {
+  height: 300px;
+  width: 350px;
+  object-fit: cover;
+}
+
+img.img07 {
+  height: 300px;
+  width: 350px;
+  object-fit: cover;
+}
+
+img.img08 {
+  height: 300PX;
+  width: 350px;
+  object-fit: cover;
+}
+
+
 /* footer */
 .footer-wrapper {
   background-color: rgba(2, 2, 68, 0.685);
@@ -160,17 +202,3 @@
 }
 
 
-
-@media screen and (max-width: 1024px){
-
-  #tubular-container iframe {
-      display: none;
-  }
-
-  #top-wrapper{
-    background-image: url(https://source.unsplash.com/random);      
-    background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat;
-  }
-}
