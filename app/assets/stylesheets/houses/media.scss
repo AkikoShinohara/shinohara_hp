@@ -1,0 +1,168 @@
+@media screen and (max-width: 1130px){
+  /* main first */
+  .f-contents {
+    padding: 0px 0;
+  }
+  
+  .f-contents div {
+    font-size: 13px;
+    font-weight: 600;
+    margin: 100px 10px;
+  }
+  
+  img.img01 {
+    height: 500px;
+    width: 300px;
+    object-fit: cover;
+    opacity: 0.9;
+  }
+  
+  img.img02 {
+    height: 250px;
+    width: 400px;
+    padding-top: 200px;
+    opacity: 0.6;
+  }
+  /* main second */
+  .s-contents > div {
+    font-size: 13px;
+    font-weight: 600;
+    margin: 80px 50px;
+  }
+  
+  .s-contents > ul{
+    display: flex;
+    flex-direction: row-reverse;
+    margin: 0 0vw;
+  }
+
+  img.img03 {
+    margin-right: 2vw;
+    height: 450px;
+    width: 280px;
+    object-fit: cover;
+    opacity: 0.9;
+  }
+  img.img04 {
+    width: 350px;
+  }
+  img.img05 {
+    height: 260px;
+    width: 350px;
+  }
+  /* main third */
+  .t-wrapper {
+    margin: auto;
+    width: 100%;
+  }
+  
+  .t-contents {
+    margin: auto;
+    width: 98%;
+    padding: 100px 0;
+  }
+  
+  .t-content {
+    background-color: rgba(255, 255, 255, 0.384);
+    margin: 10px auto;
+  }
+  
+  .t-content > div {
+    font-size: 25px;
+  }
+  
+  .t-content > ul {
+    display: flex;
+    justify-content: space-around;
+  }
+  
+  .t-content > ul > li {
+    margin: 20px auto;
+  }
+  
+  img.img06 {
+    height: 300px;
+    width: 350px;
+    object-fit: cover;
+  }
+  
+  img.img07 {
+    height: 300px;
+    width: 350px;
+    object-fit: cover;
+  }
+  
+  img.img08 {
+    height: 300PX;
+    width: 350px;
+    object-fit: cover;
+  }
+  
+  
+  /* footer */
+  .footer-wrapper {
+    background-color: rgba(2, 2, 68, 0.685);
+  }
+  
+  .footer-contents {
+    color: white;
+    display: flex;
+    justify-content: space-between;
+    padding: 0 100px;
+  }
+  
+  .footer-left {
+    display: flex;
+  }
+  
+  .footer-left > div {
+    margin: 10px 50px;   
+  }
+  
+  .footer-tittle {
+    padding-top: 25px;
+  }
+  
+  .footer-right > ul {
+    display: flex;
+    padding-top: 35px;
+  }
+  
+  .footer-right li {
+    padding: 0 25px;
+  }
+  
+  .news {
+    text-decoration: none;
+    color: white;
+  }
+  .information {
+    color: white;
+    text-decoration: none;
+  }
+  .contact {
+    color: white;
+    text-decoration: none;
+  }
+  .construction {
+    color: white;
+    text-decoration: none;
+  }
+}
+
+
+
+
+@media screen and (max-width: 1124px){
+
+  #tubular-container iframe {
+      display: none;
+  }
+
+  #top-wrapper{
+    background-image: url(https://source.unsplash.com/random);      
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+  }
+}
