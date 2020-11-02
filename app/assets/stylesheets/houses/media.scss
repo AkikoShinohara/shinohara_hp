@@ -43,7 +43,7 @@
     object-fit: cover;
     opacity: 0.9;
   }
-  
+
   img.img04 {
     width: 350px;
   }
@@ -155,16 +155,35 @@
 
 
 
-@media screen and (max-width: 1124px){
+@media screen and (max-width: 1080px){
 
   #tubular-container iframe {
       display: none;
   }
 
   #top-wrapper{
-    background-image: url(https://source.unsplash.com/random);      
+    background-image: image-url("image12.jpg");      
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
   }
+
+  img.img06 {
+    height: 200px;
+    width: 200px;
+    object-fit: cover;
+  }
+  
+  img.img07 {
+    height: 200px;
+    width: 200px;
+    object-fit: cover;
+  }
+  
+  img.img08 {
+    height: 200PX;
+    width: 200px;
+    object-fit: cover;
+  }
+  
 }
