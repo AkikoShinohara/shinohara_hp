@@ -91,3 +91,33 @@ header{
   color: black;
   padding-left: 50px;
 }
+
+@media (max-width: 770px) {
+  header{
+    width: 100%;
+  }
+  
+  .header-left a {
+    text-decoration: none;
+    color: black;
+  }
+
+  .header-left {
+    width: 10%;
+  } 
+  
+  .far {
+    font-family: "Font Awesome 5 Free";
+    margin-top: 20px;
+    margin-left: 0px;
+  }
+  
+  .nav-bar {
+    margin-left: 0vw;
+  }
+  
+  .fas {
+    color: black;
+    padding-left: 0px;
+  }
+}
